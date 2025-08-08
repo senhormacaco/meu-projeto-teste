@@ -1,0 +1,12 @@
+<nav class="category-menu">
+  {% for link in linklists.main-menu.links %}
+    <a href="{{ link.url }}">{{ link.title | upcase }}</a>
+  {% endfor %}
+</nav>
+
+{% schema %}
+{
+  "name": "Barra de categorias",
+  "settings": []
+}
+{% endschema %}

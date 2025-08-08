@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "slideshow": {"type": "slideshow", "settings": {}},
+    "benefits": {"type": "benefits-strip", "settings": {}},
+    "collections": {"type": "collection-list", "settings": {}},
+    "brands": {"type": "brands-slider", "settings": {}},
+    "newsletter": {"type": "newsletter", "settings": {}}
+  },
+  "order": ["slideshow", "benefits", "collections", "brands", "newsletter"]
+}

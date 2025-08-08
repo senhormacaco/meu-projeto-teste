@@ -1,17 +1,27 @@
 # Meu Projeto Teste
 
-Tema simples para Shopify inspirado em uma loja de pets, com esquema de cores azul claro e laranja. 
+Tema para Shopify inspirado em uma loja de pets com paleta azul e laranja.
 
 ## Estrutura
 ```
 assets/
-  styles.css
+  theme.css
 config/
   settings_schema.json
 layout/
   theme.liquid
+sections/
+  promo-bar.liquid
+  header.liquid
+  category-menu.liquid
+  slideshow.liquid
+  benefits-strip.liquid
+  collection-list.liquid
+  brands-slider.liquid
+  newsletter.liquid
+  footer.liquid
 templates/
-  index.liquid
+  index.json
   product.liquid
   collection.liquid
   404.liquid

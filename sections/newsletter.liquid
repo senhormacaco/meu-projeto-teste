@@ -1,0 +1,30 @@
+<div class="newsletter">
+  <h2>Receba novidades</h2>
+  <form method="post" action="/contact#contact_form">
+    <input type="hidden" name="form_type" value="customer">
+    <input type="email" name="contact[email]" placeholder="Seu email">
+    <button type="submit">Assinar</button>
+  </form>
+  <div class="badges">
+    {% for block in section.blocks %}
+      {% if block.settings.image %}<img src="{{ block.settings.image | img_url: '100x' }}" alt="">{% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": [],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Selo",
+      "settings": [
+        {"type": "image_picker", "id": "image", "label": "Imagem"}
+      ]
+    }
+  ]
+}
+{% endschema %}

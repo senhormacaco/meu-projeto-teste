@@ -1,0 +1,27 @@
+<div class="collection-list">
+  {% for block in section.blocks %}
+    {% assign coll = collections[block.settings.collection] %}
+    <a class="collection-card" href="{{ coll.url }}">
+      {% if block.settings.image %}<img src="{{ block.settings.image | img_url: '400x' }}" alt="{{ coll.title }}">{% endif %}
+      <span>{{ coll.title }}</span>
+    </a>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Grade de categorias",
+  "settings": [],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Coleção",
+      "settings": [
+        {"type": "collection", "id": "collection", "label": "Coleção"},
+        {"type": "image_picker", "id": "image", "label": "Imagem"}
+      ]
+    }
+  ]
+}
+{% endschema %}
