@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Geral",
+    "settings": [
+      {
+        "type": "text",
+        "id": "store_heading",
+        "label": "Título da loja",
+        "default": "Minha Loja Pet"
+      },
+      {
+        "type": "color",
+        "id": "primary_color",
+        "label": "Cor primária",
+        "default": "#ADD8E6"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color",
+        "label": "Cor secundária",
+        "default": "#FFA500"
+      }
+    ]
+  }
+]

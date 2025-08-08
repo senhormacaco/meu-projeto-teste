@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ settings.store_heading }}</title>
+  <link rel="stylesheet" href="{{ 'styles.css' | asset_url }}">
+  <style>
+    :root {
+      --primary-color: {{ settings.primary_color }};
+      --secondary-color: {{ settings.secondary_color }};
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ settings.store_heading }}</h1>
+    <nav>
+      <a href="/">Início</a>
+      <a href="/collections/all">Produtos</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content_for_layout }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ 'now' | date: "%Y" }} - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

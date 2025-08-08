@@ -1,0 +1,9 @@
+{% comment %} Template de produto {% endcomment %}
+<h1>{{ product.title }}</h1>
+<p>{{ product.description }}</p>
+
+{% for image in product.images %}
+  <img src="{{ image.src | img_url: 'medium' }}" alt="{{ product.title }}">
+{% endfor %}
+
+<p>Preço: {{ product.price | money }}</p>
