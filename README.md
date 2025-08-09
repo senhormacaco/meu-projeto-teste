@@ -1,6 +1,6 @@
 # Meu Projeto Teste
 
-Tema para Shopify inspirado em uma loja de pets com paleta azul e laranja. Toda a página utiliza um fundo azul claro (#ADD8E6).
+Tema para Shopify inspirado em uma loja de pets com paleta azul claro e laranja. O layout usa gradiente de azul claro (#ADD8E6) para laranja (#FFA500) e inclui página 404 estilizada.
 
 ## Estrutura
 ```

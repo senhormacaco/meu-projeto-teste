@@ -13,11 +13,11 @@
   {
     "name": "Cores do tema",
     "settings": [
-      {"type": "color", "id": "primary_color", "label": "Primária", "default": "#0ea5e9"},
-      {"type": "color", "id": "secondary_color", "label": "Secundária", "default": "#f97316"},
-      {"type": "color", "id": "highlight_color", "label": "Destaque/hover", "default": "#fb923c"},
+      {"type": "color", "id": "primary_color", "label": "Primária", "default": "#ADD8E6"},
+      {"type": "color", "id": "secondary_color", "label": "Secundária", "default": "#FFA500"},
+      {"type": "color", "id": "highlight_color", "label": "Destaque/hover", "default": "#FFB347"},
       {"type": "color", "id": "text_color", "label": "Texto", "default": "#1f2937"},
-      {"type": "color", "id": "background_color", "label": "Fundo claro", "default": "#ADD8E6"},
+      {"type": "color", "id": "background_color", "label": "Fundo claro", "default": "#f8fafc"},
       {"type": "color", "id": "whatsapp_color", "label": "Cor do WhatsApp", "default": "#25D366"}
     ]
   },

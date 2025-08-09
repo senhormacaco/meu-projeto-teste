@@ -2,12 +2,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: var(--color-background);
+  background: linear-gradient(-45deg, var(--color-primary), var(--color-secondary));
   color: var(--color-text);
 }
 
 .promo-bar {
-  background: var(--color-background);
+  background: var(--color-primary);
   color: var(--color-text);
   font-size: 14px;
   padding: 5px 10px;
@@ -22,7 +22,7 @@ body {
   padding: 10px 20px;
   position: sticky;
   top: 0;
-  background: var(--color-background);
+  background: var(--color-primary);
   z-index: 1000;
 }
 .header__logo { flex: 1; }
@@ -35,7 +35,7 @@ body {
 }
 
 .category-menu {
-  background: var(--color-background);
+  background: var(--color-primary);
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -93,7 +93,7 @@ body {
 }
 
 footer {
-  background: var(--color-background);
+  background: var(--color-primary);
   color: var(--color-text);
   padding: 20px;
   text-align: center;
