@@ -1,0 +1,36 @@
+<div class="slideshow">
+  {% for block in section.blocks %}
+    <div class="slideshow__slide{% if forloop.first %} is-active{% endif %}" data-index="{{ forloop.index0 }}">
+      {% if block.settings.image %}<img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">{% endif %}
+      <div class="slideshow__caption">
+        <h2>{{ block.settings.title }}</h2>
+        <p>{{ block.settings.subtitle }}</p>
+        {% if block.settings.button_link %}<a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_label }}</a>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  <div class="slideshow__bullets">
+    {% for block in section.blocks %}<button class="{% if forloop.first %}active{% endif %}"></button>{% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Slideshow",
+  "settings": [],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {"type": "image_picker", "id": "image", "label": "Imagem"},
+        {"type": "text", "id": "title", "label": "Título"},
+        {"type": "text", "id": "subtitle", "label": "Subtítulo"},
+        {"type": "url", "id": "button_link", "label": "Link do botão"},
+        {"type": "text", "id": "button_label", "label": "Texto do botão", "default": "Saiba mais"}
+      ]
+    }
+  ]
+}
+{% endschema %}

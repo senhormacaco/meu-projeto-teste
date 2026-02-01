@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Geral",
+    "settings": [
+      {
+        "type": "text",
+        "id": "store_heading",
+        "label": "Título da loja",
+        "default": "Minha Loja Pet"
+      }
+    ]
+  },
+  {
+    "name": "Cores do tema",
+    "settings": [
+      {"type": "color", "id": "primary_color", "label": "Primária", "default": "#ADD8E6"},
+      {"type": "color", "id": "secondary_color", "label": "Secundária", "default": "#FFA500"},
+      {"type": "color", "id": "highlight_color", "label": "Destaque/hover", "default": "#FFB347"},
+      {"type": "color", "id": "text_color", "label": "Texto", "default": "#1f2937"},
+      {"type": "color", "id": "background_color", "label": "Fundo claro", "default": "#f8fafc"},
+      {"type": "color", "id": "whatsapp_color", "label": "Cor do WhatsApp", "default": "#25D366"}
+    ]
+  },
+  {
+    "name": "Contato e redes",
+    "settings": [
+      {"type": "text", "id": "promo_message", "label": "Mensagem de boas-vindas", "default": "Olá, seja bem-vindo(a)!"},
+      {"type": "text", "id": "phone", "label": "Telefone", "default": "(00) 0000-0000"},
+      {"type": "url", "id": "facebook_link", "label": "Facebook"},
+      {"type": "url", "id": "instagram_link", "label": "Instagram"},
+      {"type": "url", "id": "youtube_link", "label": "YouTube"},
+      {"type": "text", "id": "whatsapp_number", "label": "Número WhatsApp", "default": "550000000000"},
+      {"type": "text", "id": "whatsapp_message", "label": "Mensagem WhatsApp", "default": "Olá! Gostaria de mais informações."}
+    ]
+  }
+]

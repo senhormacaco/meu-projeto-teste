@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="header__logo"><a href="/">{{ settings.store_heading }}</a></div>
+  <div class="header__search">
+    <form action="/search" method="get"><input type="search" name="q" placeholder="Buscar produtos"></form>
+  </div>
+  <div class="header__icons">
+    <a href="/pages/help">Ajuda</a>
+    <a href="/account">Minha Conta</a>
+    <a href="/cart">Carrinho ({{ cart.item_count }})</a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Cabeçalho",
+  "settings": []
+}
+{% endschema %}

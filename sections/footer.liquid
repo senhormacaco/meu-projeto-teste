@@ -1,0 +1,46 @@
+<footer>
+  <div class="footer__columns">
+    <div>
+      <h4>Institucional</h4>
+      {% if linklists.institucional %}
+        {% for link in linklists.institucional.links %}<a href="{{ link.url }}">{{ link.title }}</a>{% endfor %}
+      {% endif %}
+    </div>
+    <div>
+      <h4>Atendimento</h4>
+      {% if linklists.atendimento %}
+        {% for link in linklists.atendimento.links %}<a href="{{ link.url }}">{{ link.title }}</a>{% endfor %}
+      {% endif %}
+    </div>
+    <div>
+      <h4>Minha Conta</h4>
+      {% if linklists.minha-conta %}
+        {% for link in linklists.minha-conta.links %}<a href="{{ link.url }}">{{ link.title }}</a>{% endfor %}
+      {% endif %}
+    </div>
+    <div>
+      <h4>Pagamentos/Selos</h4>
+      {% for block in section.blocks %}
+        {% if block.settings.image %}<img src="{{ block.settings.image | img_url: '100x' }}" alt="">{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+</footer>
+
+{% schema %}
+{
+  "name": "Rodapé",
+  "settings": [],
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Selo",
+      "settings": [
+        {"type": "image_picker", "id": "image", "label": "Imagem"}
+      ]
+    }
+  ]
+}
+{% endschema %}
